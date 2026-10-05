@@ -6,3 +6,12 @@ offmap_factories_category = {
 		always = yes
 	}
 }
+
+air_tech_bundle_category = {
+	icon = generic_air
+	priority = 99
+
+	allowed = {
+		always = yes
+	}
+}

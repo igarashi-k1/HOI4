@@ -7,3 +7,7 @@
  offmap_add_military_factories_desc:0 "マップ外に軍需工場を20追加します。"
  offmap_add_dockyards:0 "造船所を20追加"
  offmap_add_dockyards_desc:0 "マップ外に造船所を20追加します。"
+ air_tech_bundle_category:0 "航空技術"
+ air_tech_bundle_category_desc:0 "航空機関連の技術を一括で習得します。"
+ air_tech_bundle_1940:0 "1940年までの航空技術を一括習得"
+ air_tech_bundle_1940_desc:0 "1940年までの航空機関連技術をすべて習得し、空軍経験値を100獲得します。"
