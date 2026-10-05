@@ -1,6 +1,6 @@
 air_tech_bundle_category = {
 
-	# 1940年までの航空機関連技術を一括習得 + 空軍経験値100
+	# 1940年までの航空機関連技術（By Blood Alone 航空ツリー）を一括習得 + 空軍経験値100
 	air_tech_bundle_1940 = {
 		icon = generic_air
 		cost = 0
@@ -14,7 +14,7 @@ air_tech_bundle_category = {
 			set_technology = {
 				popup = no
 
-				# 機体（By Blood Alone 航空機設計）
+				# 機体
 				iw_small_airframe = 1
 				basic_small_airframe = 1
 				improved_small_airframe = 1
@@ -25,46 +25,7 @@ air_tech_bundle_category = {
 				basic_large_airframe = 1
 				improved_large_airframe = 1
 
-				# 戦闘機（DLCなし旧ツリー含む）
-				early_fighter = 1
-				fighter1 = 1
-				fighter2 = 1
-				cv_early_fighter = 1
-				cv_fighter1 = 1
-				cv_fighter2 = 1
-
-				# 重戦闘機
-				heavy_fighter1 = 1
-				heavy_fighter2 = 1
-
-				# 近接航空支援機
-				CAS1 = 1
-				CAS2 = 1
-				cv_CAS1 = 1
-				cv_CAS2 = 1
-
-				# 海軍爆撃機
-				naval_bomber1 = 1
-				naval_bomber2 = 1
-				cv_naval_bomber1 = 1
-				cv_naval_bomber2 = 1
-
-				# 戦術爆撃機
-				early_bomber = 1
-				tactical_bomber1 = 1
-				tactical_bomber2 = 1
-
-				# 戦略爆撃機
-				strategic_bomber1 = 1
-				strategic_bomber2 = 1
-
-				# 偵察機
-				scout_plane1 = 1
-				scout_plane2 = 1
-
 				# 輸送機
-				early_transport_plane = 1
-				improved_transport_plane = 1
 				bba_early_transport_plane = 1
 				bba_improved_transport_plane = 1
 
