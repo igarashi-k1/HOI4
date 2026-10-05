@@ -1,0 +1,8 @@
+offmap_factories_category = {
+	icon = generic_industry
+	priority = 100
+
+	allowed = {
+		always = yes
+	}
+}

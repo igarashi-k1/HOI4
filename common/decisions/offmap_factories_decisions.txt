@@ -1,0 +1,59 @@
+offmap_factories_category = {
+
+	# 民需工場をマップ外に20追加
+	offmap_add_civilian_factories = {
+		icon = generic_construction
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 20 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 軍需工場をマップ外に20追加
+	offmap_add_military_factories = {
+		icon = generic_industry
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 20 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 造船所をマップ外に20追加
+	offmap_add_dockyards = {
+		icon = generic_naval
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_offsite_building = { type = dockyard level = 20 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

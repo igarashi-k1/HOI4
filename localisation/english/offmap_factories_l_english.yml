@@ -1,0 +1,9 @@
+﻿l_english:
+ offmap_factories_category:0 "マップ外工場"
+ offmap_factories_category_desc:0 "マップ外（オフマップ）に工場や造船所を追加します。"
+ offmap_add_civilian_factories:0 "民需工場を20追加"
+ offmap_add_civilian_factories_desc:0 "マップ外に民需工場を20追加します。"
+ offmap_add_military_factories:0 "軍需工場を20追加"
+ offmap_add_military_factories_desc:0 "マップ外に軍需工場を20追加します。"
+ offmap_add_dockyards:0 "造船所を20追加"
+ offmap_add_dockyards_desc:0 "マップ外に造船所を20追加します。"
