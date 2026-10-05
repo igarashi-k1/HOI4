@@ -14,6 +14,13 @@
 | --- | --- |
 | 1940年までの航空技術を一括習得 | By Blood Alone 航空ツリーの1940年以前の技術（機体・エンジン・兵装モジュール・輸送機等）をすべて習得し、空軍経験値 +100 |
 
+さらに「海軍技術」カテゴリに以下を追加します。
+
+| ディシジョン | 効果 |
+| --- | --- |
+| 1940年までの海軍技術を一括習得 | Man the Guns 海軍ツリーの1940年以前の技術（船体・装甲・対潜・魚雷・機雷・輸送/上陸・ダメコン・射撃管制）とレーダー技術（1940年まで）をすべて習得し、海軍経験値 +100 |
+
+- 海軍技術ディシジョンは1回のみ実行可能。Man the Guns 前提で、旧海軍ツリー・特殊プロジェクト・国家固有技術は含みません
 - 航空技術ディシジョンは1回のみ実行可能。航空ドクトリン・レーダー・ロケットは含みません
 - By Blood Alone（航空機設計）前提です。旧航空ツリー（DLCなし）の技術は含みません
 - 工場系ディシジョンは政治力コスト 0、何度でも実行可能
@@ -44,6 +51,7 @@ descriptor.mod
 common/decisions/categories/offmap_factories_categories.txt
 common/decisions/offmap_factories_decisions.txt
 common/decisions/air_tech_bundle_decisions.txt
+common/decisions/naval_tech_bundle_decisions.txt
 localisation/english/offmap_factories_l_english.yml   (UTF-8 BOM付き)
 ```
 

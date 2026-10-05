@@ -15,3 +15,12 @@ air_tech_bundle_category = {
 		always = yes
 	}
 }
+
+naval_tech_bundle_category = {
+	icon = generic_naval
+	priority = 98
+
+	allowed = {
+		always = yes
+	}
+}

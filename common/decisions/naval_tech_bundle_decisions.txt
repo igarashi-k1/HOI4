@@ -1,0 +1,94 @@
+naval_tech_bundle_category = {
+
+	# 1940年までの海軍関連技術（Man the Guns 海軍ツリー）+ レーダー技術を一括習得 + 海軍経験値100
+	naval_tech_bundle_1940 = {
+		icon = generic_naval
+		cost = 0
+		fire_only_once = yes
+
+		available = {
+			always = yes
+		}
+
+		complete_effect = {
+			set_technology = {
+				popup = no
+
+				# 船体：主力艦
+				early_ship_hull_heavy = 1
+				basic_ship_hull_heavy = 1
+				improved_ship_hull_heavy = 1
+				ship_hull_super_heavy = 1
+
+				# 船体：空母
+				early_ship_hull_carrier = 1
+				basic_ship_hull_carrier = 1
+				improved_ship_hull_carrier = 1
+
+				# 船体：巡洋艦
+				early_ship_hull_cruiser = 1
+				basic_ship_hull_cruiser = 1
+				improved_ship_hull_cruiser = 1
+
+				# 船体：駆逐艦
+				early_ship_hull_light = 1
+				basic_ship_hull_light = 1
+				improved_ship_hull_light = 1
+
+				# 船体：潜水艦
+				early_ship_hull_submarine = 1
+				basic_ship_hull_submarine = 1
+				improved_ship_hull_submarine = 1
+				basic_submarine_snorkel = 1
+
+				# 装甲
+				basic_heavy_armor_scheme = 1
+				improved_heavy_armor_scheme = 1
+				basic_cruiser_armor_scheme = 1
+
+				# 対潜
+				smoke_generator = 1
+				sonar = 1
+				improved_sonar = 1
+				advanced_sonar = 1
+				basic_depth_charges = 1
+				improved_depth_charges = 1
+				advanced_depth_charges = 1
+
+				# 魚雷
+				basic_torpedo = 1
+				improved_ship_torpedo_launcher = 1
+				advanced_ship_torpedo_launcher = 1
+				magnetic_detonator = 1
+
+				# 機雷
+				basic_naval_mines = 1
+				improved_naval_mines = 1
+				advanced_naval_mines = 1
+				submarine_mine_laying = 1
+				improved_submarine_mine_laying = 1
+				degaussing = 1
+
+				# 輸送・上陸・ダメージコントロール・射撃管制
+				mtg_transport = 1
+				mtg_landing_craft = 1
+				damage_control_1 = 1
+				damage_control_2 = 1
+				damage_control_3 = 1
+				fire_control_methods_1 = 1
+				fire_control_methods_2 = 1
+				fire_control_methods_3 = 1
+
+				# レーダー
+				radio_detection = 1
+				cavity_magnatron = 1
+				centimetric_radar = 1
+			}
+			navy_experience = 100
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
