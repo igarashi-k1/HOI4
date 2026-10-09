@@ -1,0 +1,35 @@
+supply_hub_category = {
+
+	# 所有しているステートの戦勝点があるプロヴィンスすべてに補給ハブを即時設置 + 民間鉄道の技術を習得
+	supply_hub_victory_points = {
+		icon = generic_construction
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			always = yes
+		}
+
+		complete_effect = {
+			set_technology = {
+				popup = no
+				basic_train = 1
+			}
+			every_owned_state = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_victory_point = yes
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

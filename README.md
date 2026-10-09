@@ -20,6 +20,14 @@
 | --- | --- |
 | 1940年までの海軍技術を一括習得 | Man the Guns 海軍ツリーの1940年以前の技術（船体・装甲・対潜・魚雷・機雷・輸送/上陸・ダメコン・射撃管制）とレーダー技術（1940年まで）をすべて習得し、海軍経験値 +100 |
 
+さらに「補給」カテゴリに以下を追加します。
+
+| ディシジョン | 効果 |
+| --- | --- |
+| 戦勝点に補給ハブを設置 | 所有しているステートの戦勝点があるプロヴィンスすべてに補給ハブを即時設置し、民間鉄道（`basic_train`）の技術を習得 |
+
+- 補給ハブディシジョンは何度でも実行可能（新たに獲得した領土にも設置できます）。補給ハブが機能するには首都と鉄道でつながっている必要があります
+
 - 海軍技術ディシジョンは1回のみ実行可能。Man the Guns 前提で、旧海軍ツリー・特殊プロジェクト・国家固有技術は含みません
 - 航空技術ディシジョンは1回のみ実行可能。航空ドクトリン・レーダー・ロケットは含みません
 - By Blood Alone（航空機設計）前提です。旧航空ツリー（DLCなし）の技術は含みません
@@ -52,6 +60,7 @@ common/decisions/categories/offmap_factories_categories.txt
 common/decisions/offmap_factories_decisions.txt
 common/decisions/air_tech_bundle_decisions.txt
 common/decisions/naval_tech_bundle_decisions.txt
+common/decisions/supply_hub_decisions.txt
 localisation/english/offmap_factories_l_english.yml   (UTF-8 BOM付き)
 ```
 

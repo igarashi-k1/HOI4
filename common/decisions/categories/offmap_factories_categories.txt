@@ -24,3 +24,12 @@ naval_tech_bundle_category = {
 		always = yes
 	}
 }
+
+supply_hub_category = {
+	icon = generic_construction
+	priority = 97
+
+	allowed = {
+		always = yes
+	}
+}
