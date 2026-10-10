@@ -1,6 +1,6 @@
 naval_tech_bundle_category = {
 
-	# 1940年までの海軍関連技術（Man the Guns 海軍ツリー）+ レーダー技術を一括習得 + 海軍経験値100
+	# 1940年までの海軍関連技術（Man the Guns 海軍ツリー）+ 海軍軍備（砲術・砲塔・火器管制）+ レーダー技術を一括習得 + 海軍経験値100
 	naval_tech_bundle_1940 = {
 		icon = generic_naval
 		cost = 0
@@ -78,6 +78,22 @@ naval_tech_bundle_category = {
 				fire_control_methods_1 = 1
 				fire_control_methods_2 = 1
 				fire_control_methods_3 = 1
+
+				# 海軍軍備：砲術・砲塔
+				basic_battery = 1
+				basic_light_battery = 1
+				improved_light_battery = 1
+				basic_heavy_battery = 1
+				improved_heavy_battery = 1
+				basic_dp_light_battery = 1
+				improved_dp_light_battery = 1
+				basic_light_shell = 1
+				basic_heavy_shell = 1
+
+				# 海軍軍備：火器管制
+				basic_fire_control_system = 1
+				improved_fire_control_system = 1
+				advanced_fire_control_system = 1
 
 				# レーダー
 				radio_detection = 1
