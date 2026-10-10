@@ -11,6 +11,8 @@ supply_hub_category = {
 		}
 
 		complete_effect = {
+			# 「補給ハブ間の鉄道敷設」の前提条件用フラグ
+			set_country_flag = railway_dawn_completed
 			set_technology = {
 				popup = no
 				basic_train = 1
@@ -23,6 +25,51 @@ supply_hub_category = {
 					province = {
 						all_provinces = yes
 						limit_to_victory_point = yes
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 隣接する自国所有ステート同士の補給ハブ（各ステートの最良ノード：首都 > 補給ハブ > 港）を最短経路の鉄道で結ぶ
+	# 前提条件：「鉄道の夜明け」を実行済み
+	supply_hub_railways = {
+		icon = generic_construction
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			has_country_flag = railway_dawn_completed
+		}
+
+		complete_effect = {
+			# 同じ組み合わせを二重に敷設しないよう、ステートIDが小さい側からのみ敷設する
+			every_owned_state = {
+				set_temp_variable = { rail_start_state = THIS }
+				every_neighbor_state = {
+					limit = { is_owned_by = ROOT }
+					set_temp_variable = { rail_target_state = THIS }
+					if = {
+						limit = {
+							check_variable = { rail_start_state < rail_target_state }
+						}
+						build_railway = {
+							level = 1
+							# 自国が支配するプロヴィンスだけを通る
+							controller_priority = {
+								base = -1
+								modifier = {
+									tag = ROOT
+									add = 2
+								}
+							}
+							start_state = var:rail_start_state
+							target_state = var:rail_target_state
+						}
 					}
 				}
 			}
