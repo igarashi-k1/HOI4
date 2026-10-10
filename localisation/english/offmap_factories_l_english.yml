@@ -21,5 +21,5 @@
  supply_hub_victory_points_desc:0 "所有しているステートの戦勝点があるプロヴィンスすべてに補給ハブを即時設置し、民間鉄道の技術を習得します。"
  supply_hub_railways:0 "鉄道網の整備"
  supply_hub_railways_desc:0 "隣接する自国ステートの補給ハブ同士を、自国支配地を通る最短経路の鉄道で結びます。「鉄道の夜明け」の実行が必要です。"
- occupied_supply_hub_railways:0 "占領地の鉄道整備"
+ occupied_supply_hub_railways:0 "占領地の補給網整備"
  occupied_supply_hub_railways_desc:0 "占領しているステートの戦勝点があるプロヴィンスに補給ハブを即時設置し、隣接する自国支配ステートの補給ハブや港から最短経路で鉄道を敷設します。「鉄道の夜明け」の実行が必要です。"
