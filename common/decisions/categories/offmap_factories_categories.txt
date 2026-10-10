@@ -33,3 +33,12 @@ supply_hub_category = {
 		always = yes
 	}
 }
+
+resource_development_category = {
+	icon = generic_industry
+	priority = 96
+
+	allowed = {
+		always = yes
+	}
+}

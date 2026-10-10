@@ -1,0 +1,30 @@
+resource_development_category = {
+
+	# 首都ステートに石油・ゴム・鉄・アルミニウム・タングステン・クロム・石炭の産出を各200追加
+	# 前提条件：「鉄道の夜明け」を実行済み
+	resource_development = {
+		icon = generic_industry
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			has_country_flag = railway_dawn_completed
+		}
+
+		complete_effect = {
+			capital_scope = {
+				add_resource = { type = oil amount = 200 }
+				add_resource = { type = rubber amount = 200 }
+				add_resource = { type = steel amount = 200 }
+				add_resource = { type = aluminium amount = 200 }
+				add_resource = { type = tungsten amount = 200 }
+				add_resource = { type = chromium amount = 200 }
+				add_resource = { type = coal amount = 200 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

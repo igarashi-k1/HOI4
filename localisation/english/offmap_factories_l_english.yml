@@ -23,3 +23,7 @@
  supply_hub_railways_desc:0 "隣接する自国ステートの補給ハブ同士を、自国支配地を通る最短経路の鉄道で結びます。「鉄道の夜明け」の実行が必要です。"
  occupied_supply_hub_railways:0 "占領地の補給網整備"
  occupied_supply_hub_railways_desc:0 "占領しているステートの戦勝点があるプロヴィンスに補給ハブを即時設置し、隣接する自国支配ステートの補給ハブや港から最短経路で鉄道を敷設します。「鉄道の夜明け」の実行が必要です。"
+ resource_development_category:0 "資源"
+ resource_development_category_desc:0 "資源の開発を行います。"
+ resource_development:0 "資源の開発"
+ resource_development_desc:0 "首都に石油・ゴム・鉄・アルミニウム・タングステン・クロム・石炭の産出を各200追加します。「鉄道の夜明け」の実行が必要です。"

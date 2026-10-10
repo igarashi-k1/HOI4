@@ -31,6 +31,14 @@
 - 補給ハブ間の鉄道は各ステートの最良ノード（首都 > 補給ハブ > 港）同士を結びます。1ステートに複数の戦勝点がある場合、鉄道で結ばれるのはそのうち1つです。実行するたびに鉄道レベルが加算されます
 - 補給ハブディシジョンは何度でも実行可能（新たに獲得した領土にも設置できます）。補給ハブが機能するには首都と鉄道でつながっている必要があります
 
+さらに「資源」カテゴリに以下を追加します。
+
+| ディシジョン | 効果 |
+| --- | --- |
+| 資源の開発 | 首都ステートに石油・ゴム・鉄・アルミニウム・タングステン・クロム・石炭の産出を各 +200。「鉄道の夜明け」の実行が前提条件 |
+
+- 資源の開発は何度でも実行可能（実行するたびに各 +200）
+
 - 海軍技術ディシジョンは1回のみ実行可能。Man the Guns 前提で、旧海軍ツリー・特殊プロジェクト・国家固有技術は含みません
 - 航空技術ディシジョンは1回のみ実行可能。航空ドクトリン・レーダー・ロケットは含みません
 - By Blood Alone（航空機設計）前提です。旧航空ツリー（DLCなし）の技術は含みません
@@ -64,6 +72,7 @@ common/decisions/offmap_factories_decisions.txt
 common/decisions/air_tech_bundle_decisions.txt
 common/decisions/naval_tech_bundle_decisions.txt
 common/decisions/supply_hub_decisions.txt
+common/decisions/resource_development_decisions.txt
 localisation/english/offmap_factories_l_english.yml   (UTF-8 BOM付き)
 ```
 
