@@ -11,7 +11,7 @@ supply_hub_category = {
 		}
 
 		complete_effect = {
-			# 「補給ハブ間の鉄道敷設」の前提条件用フラグ
+			# 「鉄道網の整備」の前提条件用フラグ
 			set_country_flag = railway_dawn_completed
 			set_technology = {
 				popup = no
