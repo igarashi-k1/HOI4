@@ -1,6 +1,6 @@
 supply_hub_category = {
 
-	# 所有しているステートの戦勝点があるプロヴィンスすべてに補給ハブを即時設置 + 民間鉄道の技術を習得
+	# 所有しているステートの戦勝点があるプロヴィンスすべてに補給ハブを即時設置し、補給ハブ間を鉄道で結ぶ + 民間鉄道の技術を習得
 	supply_hub_victory_points = {
 		icon = generic_construction
 		cost = 0
@@ -23,6 +23,34 @@ supply_hub_category = {
 					province = {
 						all_provinces = yes
 						limit_to_victory_point = yes
+					}
+				}
+			}
+
+			# 隣接する自国所有ステート同士の補給ハブ（各ステートの最良ノード：首都 > 補給ハブ > 港）を
+			# 最短経路の鉄道で結ぶ。同じ組み合わせを二重に敷設しないよう、ステートIDが小さい側からのみ敷設する。
+			every_owned_state = {
+				set_temp_variable = { rail_start_state = THIS }
+				every_neighbor_state = {
+					limit = { is_owned_by = ROOT }
+					set_temp_variable = { rail_target_state = THIS }
+					if = {
+						limit = {
+							check_variable = { rail_start_state < rail_target_state }
+						}
+						build_railway = {
+							level = 1
+							# 自国が支配するプロヴィンスだけを通る
+							controller_priority = {
+								base = -1
+								modifier = {
+									tag = ROOT
+									add = 2
+								}
+							}
+							start_state = var:rail_start_state
+							target_state = var:rail_target_state
+						}
 					}
 				}
 			}
