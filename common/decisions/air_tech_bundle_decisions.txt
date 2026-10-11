@@ -1,6 +1,6 @@
 air_tech_bundle_category = {
 
-	# 1940年までの航空機関連技術（By Blood Alone 航空ツリー）を一括習得 + 空軍経験値100
+	# 1940年までの航空機関連技術（By Blood Alone 航空ツリー）＋初期野戦砲・対戦車砲（1940年まで）を一括習得 + 空軍経験値100
 	air_tech_bundle_1940 = {
 		icon = generic_air
 		cost = 0
@@ -44,6 +44,14 @@ air_tech_bundle_category = {
 				range_improvements = 1
 				aircraft_construction = 1
 				survivability_studies = 1
+
+				# 初期野戦砲
+				gw_artillery = 1
+
+				# 対戦車砲（1940年まで）
+				interwar_antitank = 1
+				antitank1 = 1
+				antitank2 = 1
 			}
 			air_experience = 100
 		}
