@@ -27,3 +27,5 @@
  resource_development_category_desc:0 "資源の開発を行います。"
  resource_development:0 "資源の開発"
  resource_development_desc:0 "首都に石油・ゴム・鉄・アルミニウム・タングステン・クロム・石炭の産出を各200追加します。「鉄道の夜明け」の実行が必要です。"
+ naval_latest_fleet:0 "最新鋭艦隊の就役"
+ naval_latest_fleet_desc:0 "改良型船体に最新型艤装を装備した戦艦2隻・軽巡洋艦2隻・駆逐艦6隻を予備艦隊に追加します。「1940年までの海軍技術を一括習得」の実行が必要です。"

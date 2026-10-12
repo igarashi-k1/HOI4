@@ -11,6 +11,8 @@ naval_tech_bundle_category = {
 		}
 
 		complete_effect = {
+			# 「最新鋭艦隊の就役」の前提条件用フラグ
+			set_country_flag = naval_tech_bundle_completed
 			set_technology = {
 				popup = no
 
@@ -112,6 +114,112 @@ naval_tech_bundle_category = {
 				centimetric_radar = 1
 			}
 			navy_experience = 100
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 最新型船体（改良型）に最新型艤装を装備した戦艦2隻・軽巡洋艦2隻・駆逐艦6隻を予備艦隊に追加
+	# 前提条件：「1940年までの海軍技術を一括習得」を実行済み
+	#（フラグ導入前に実行したセーブ向けに、改良型船体3種の習得でも可）
+	naval_latest_fleet = {
+		icon = generic_naval
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			OR = {
+				has_country_flag = naval_tech_bundle_completed
+				AND = {
+					has_tech = improved_ship_hull_heavy
+					has_tech = improved_ship_hull_cruiser
+					has_tech = improved_ship_hull_light
+				}
+			}
+		}
+
+		complete_effect = {
+			# 艦級（装備バリエーション）を初回のみ作成
+			if = {
+				limit = { NOT = { has_country_flag = naval_latest_variants_created } }
+				set_country_flag = naval_latest_variants_created
+
+				# 戦艦：改良型重船体
+				create_equipment_variant = {
+					name = "Modern Battleship"
+					type = ship_hull_heavy_3
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = ship_radar_2
+						fixed_ship_engine_slot = heavy_ship_engine_3
+						fixed_ship_secondaries_slot = dp_ship_secondaries_3
+						fixed_ship_armor_slot = ship_armor_bb_3
+						front_1_custom_slot = ship_heavy_battery_3
+						mid_1_custom_slot = ship_anti_air_3
+						mid_2_custom_slot = dp_ship_secondaries_3
+						mid_3_custom_slot = ship_anti_air_3
+						rear_1_custom_slot = ship_heavy_battery_3
+					}
+				}
+
+				# 軽巡洋艦：改良型巡洋艦船体
+				create_equipment_variant = {
+					name = "Modern Light Cruiser"
+					type = ship_hull_cruiser_3
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = ship_radar_2
+						fixed_ship_engine_slot = cruiser_ship_engine_3
+						fixed_ship_armor_slot = ship_armor_cruiser_4
+						fixed_ship_secondaries_slot = dp_ship_secondaries_3
+						front_1_custom_slot = ship_light_medium_battery_3
+						mid_1_custom_slot = ship_anti_air_3
+						mid_2_custom_slot = ship_anti_air_3
+						rear_1_custom_slot = ship_light_medium_battery_3
+					}
+				}
+
+				# 駆逐艦：改良型軽船体
+				create_equipment_variant = {
+					name = "Modern Destroyer"
+					type = ship_hull_light_3
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = ship_sonar_3
+						fixed_ship_engine_slot = light_ship_engine_3
+						fixed_ship_torpedo_slot = ship_torpedo_3
+						mid_1_custom_slot = ship_torpedo_3
+						rear_1_custom_slot = ship_depth_charge_3
+					}
+				}
+			}
+
+			create_ship = {
+				type = ship_hull_heavy_3
+				equipment_variant = "Modern Battleship"
+				amount = 2
+			}
+			create_ship = {
+				type = ship_hull_cruiser_3
+				equipment_variant = "Modern Light Cruiser"
+				amount = 2
+			}
+			create_ship = {
+				type = ship_hull_light_3
+				equipment_variant = "Modern Destroyer"
+				amount = 6
+			}
 		}
 
 		ai_will_do = {
