@@ -75,6 +75,7 @@ common/decisions/naval_tech_bundle_decisions.txt
 common/decisions/supply_hub_decisions.txt
 common/decisions/resource_development_decisions.txt
 localisation/english/offmap_factories_l_english.yml   (UTF-8 BOM付き)
+localisation/japanese/offmap_factories_l_japanese.yml  (UTF-8 BOM付き)
 ```
 
-※ 日本語化MOD環境を想定し、ローカライズは `l_english` に日本語で記述しています。
+※ ローカライズは `l_japanese`（ゲームの言語設定が日本語の場合）と `l_english`（英語設定＋日本語化MODの場合）の両方に日本語で記述しています。
