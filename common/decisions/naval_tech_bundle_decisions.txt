@@ -205,20 +205,50 @@ naval_tech_bundle_category = {
 				}
 			}
 
+			# 戦艦 ×2（amount 指定は1隻しか追加されないため、1隻ずつ追加）
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				amount = 2
+			}
+			create_ship = {
+				type = ship_hull_heavy_3
+				equipment_variant = "Modern Battleship"
+			}
+
+			# 軽巡洋艦 ×2（amount 指定は1隻しか追加されないため、1隻ずつ追加）
+			create_ship = {
+				type = ship_hull_cruiser_3
+				equipment_variant = "Modern Light Cruiser"
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				amount = 2
+			}
+
+			# 駆逐艦 ×6（amount 指定は1隻しか追加されないため、1隻ずつ追加）
+			create_ship = {
+				type = ship_hull_light_3
+				equipment_variant = "Modern Destroyer"
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				amount = 6
+			}
+			create_ship = {
+				type = ship_hull_light_3
+				equipment_variant = "Modern Destroyer"
+			}
+			create_ship = {
+				type = ship_hull_light_3
+				equipment_variant = "Modern Destroyer"
+			}
+			create_ship = {
+				type = ship_hull_light_3
+				equipment_variant = "Modern Destroyer"
+			}
+			create_ship = {
+				type = ship_hull_light_3
+				equipment_variant = "Modern Destroyer"
 			}
 		}
 
