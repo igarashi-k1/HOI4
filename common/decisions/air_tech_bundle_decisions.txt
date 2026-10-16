@@ -178,4 +178,73 @@ air_tech_bundle_category = {
 			factor = 0
 		}
 	}
+
+	# 練習機の追加：最低限の装備のみの戦闘機・近接航空支援機を各100機、装備の備蓄に追加
+	# 機体は戦間期型小型機体、武装・エンジンは最下位のものを1つずつ、その他は空
+	# 前提条件：「1940年までの航空技術を一括習得」を実行済み（改良型機体3種の習得でも可）
+	air_trainer_planes = {
+		icon = generic_air
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			OR = {
+				has_country_flag = air_tech_bundle_completed
+				AND = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+			}
+		}
+
+		complete_effect = {
+			# 機体設計（装備バリエーション）を初回のみ作成
+			if = {
+				limit = { NOT = { has_country_flag = air_trainer_variants_created } }
+				set_country_flag = air_trainer_variants_created
+
+				# 練習戦闘機：戦間期型小型機体 + 軽機関銃×2 + エンジンLv1×1
+				create_equipment_variant = {
+					name = "Trainer Fighter"
+					type = small_plane_airframe_0
+					parent_version = 0
+					modules = {
+						fixed_main_weapon_slot = light_mg_2x
+						engine_type_slot = engine_1_1x
+						special_type_slot_1 = empty
+					}
+				}
+
+				# 練習CAS：戦間期型小型CAS機体 + 爆弾架 + エンジンLv1×1
+				create_equipment_variant = {
+					name = "Trainer CAS"
+					type = small_plane_cas_airframe_0
+					parent_version = 0
+					modules = {
+						fixed_main_weapon_slot = bomb_locks
+						engine_type_slot = engine_1_1x
+						special_type_slot_1 = empty
+					}
+				}
+			}
+
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_0
+				variant_name = "Trainer Fighter"
+				amount = 100
+				producer = ROOT
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_cas_airframe_0
+				variant_name = "Trainer CAS"
+				amount = 100
+				producer = ROOT
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
