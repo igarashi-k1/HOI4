@@ -549,7 +549,7 @@ naval_tech_bundle_category = {
 		}
 	}
 
-	# 潜水艦艦隊：改良型潜水艦船体にシュノーケルと魚雷を最大限積んだ潜水艦60隻を練度最大で予備艦隊に追加
+	# 潜水艦艦隊：改良型潜水艦船体にシュノーケルと魚雷を最大限積んだ潜水艦64隻を練度最大で予備艦隊に追加
 	# 前提条件：「1940年までの海軍技術を一括習得」を実行済み（改良型船体3種の習得でも可）
 	naval_submarine_fleet = {
 		icon = generic_naval
@@ -571,7 +571,27 @@ naval_tech_bundle_category = {
 			# 艦級（装備バリエーション）を初回のみ作成
 			create_naval_latest_submarine_variant = yes
 
-			# 潜水艦 ×60（start_experience_factor = 1.0 は試験的な指定）
+			# 潜水艦 ×64（start_experience_factor = 1.0 は試験的な指定）
+			create_ship = {
+				type = ship_hull_submarine_3
+				equipment_variant = "Modern Submarine"
+				start_experience_factor = 1.0
+			}
+			create_ship = {
+				type = ship_hull_submarine_3
+				equipment_variant = "Modern Submarine"
+				start_experience_factor = 1.0
+			}
+			create_ship = {
+				type = ship_hull_submarine_3
+				equipment_variant = "Modern Submarine"
+				start_experience_factor = 1.0
+			}
+			create_ship = {
+				type = ship_hull_submarine_3
+				equipment_variant = "Modern Submarine"
+				start_experience_factor = 1.0
+			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
