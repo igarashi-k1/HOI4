@@ -121,7 +121,7 @@ naval_tech_bundle_category = {
 		}
 	}
 
-	# 最新型船体（改良型）に最新型艤装を装備した戦艦8隻・軽巡洋艦8隻・駆逐艦24隻を練度最大（試験的）で予備艦隊に追加
+	# 最新型船体（改良型）に最新型艤装を装備した戦艦8隻・軽巡洋艦8隻・駆逐艦24隻を予備艦隊に追加
 	# 前提条件：「1940年までの海軍技術を一括習得」を実行済み
 	naval_latest_fleet = {
 		icon = generic_naval
@@ -136,210 +136,170 @@ naval_tech_bundle_category = {
 			# 艦級（装備バリエーション）を初回のみ作成
 			create_naval_latest_variants = yes
 
-			# 戦艦 ×8（amount 指定は1隻しか追加されないため、1隻ずつ追加。start_experience_factor = 1.0 は試験的な指定）
+			# 戦艦 ×8（amount 指定は1隻しか追加されないため、1隻ずつ追加）
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_heavy_3
 				equipment_variant = "Modern Battleship"
-				start_experience_factor = 1.0
 			}
 
-			# 軽巡洋艦 ×8（amount 指定は1隻しか追加されないため、1隻ずつ追加。start_experience_factor = 1.0 は試験的な指定）
+			# 軽巡洋艦 ×8（amount 指定は1隻しか追加されないため、1隻ずつ追加）
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 
-			# 駆逐艦 ×24（amount 指定は1隻しか追加されないため、1隻ずつ追加。start_experience_factor = 1.0 は試験的な指定）
+			# 駆逐艦 ×24（amount 指定は1隻しか追加されないため、1隻ずつ追加）
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 		}
 
@@ -349,7 +309,6 @@ naval_tech_bundle_category = {
 	}
 
 	# 船団護衛艦隊：最新鋭の軽巡洋艦8隻・駆逐艦24隻を予備艦隊に追加
-	# 試験的に start_experience_factor = 1.0（練度最大）を指定（create_ship の公式ドキュメントには無いパラメータ）
 	# 前提条件：「1940年までの海軍技術を一括習得」を実行済み
 	naval_convoy_escort_fleet = {
 		icon = generic_naval
@@ -368,164 +327,132 @@ naval_tech_bundle_category = {
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_cruiser_3
 				equipment_variant = "Modern Light Cruiser"
-				start_experience_factor = 1.0
 			}
 
 			# 駆逐艦 ×24
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_light_3
 				equipment_variant = "Modern Destroyer"
-				start_experience_factor = 1.0
 			}
 		}
 
@@ -534,7 +461,7 @@ naval_tech_bundle_category = {
 		}
 	}
 
-	# 潜水艦艦隊：改良型潜水艦船体にシュノーケルと魚雷を最大限積んだ潜水艦64隻を練度最大で予備艦隊に追加
+	# 潜水艦艦隊：改良型潜水艦船体にシュノーケルと魚雷を最大限積んだ潜水艦64隻を予備艦隊に追加
 	# 前提条件：「1940年までの海軍技術を一括習得」を実行済み
 	naval_submarine_fleet = {
 		icon = generic_naval
@@ -549,326 +476,262 @@ naval_tech_bundle_category = {
 			# 艦級（装備バリエーション）を初回のみ作成
 			create_naval_latest_submarine_variant = yes
 
-			# 潜水艦 ×64（start_experience_factor = 1.0 は試験的な指定）
+			# 潜水艦 ×64
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 			create_ship = {
 				type = ship_hull_submarine_3
 				equipment_variant = "Modern Submarine"
-				start_experience_factor = 1.0
 			}
 		}
 
