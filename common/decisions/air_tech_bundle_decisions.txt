@@ -123,51 +123,52 @@ air_tech_bundle_category = {
 		}
 
 		complete_effect = {
-			# 機体設計（装備バリエーション）を初回のみ作成
+			# 機体設計（装備バリエーション）を初回のみ作成（Mk2：設計変更版。旧設計を作成済みのセーブでも新設計を作成する）
 			if = {
-				limit = { NOT = { has_country_flag = air_latest_variants_created } }
-				set_country_flag = air_latest_variants_created
+				limit = { NOT = { has_country_flag = air_latest_variants_mk2_created } }
+				set_country_flag = air_latest_variants_mk2_created
 
 				# 戦闘機：改良型小型機体
 				create_equipment_variant = {
-					name = "Modern Fighter"
+					name = "Modern Fighter Mk2"
 					type = small_plane_airframe_2
 					parent_version = 0
 					modules = {
 						fixed_main_weapon_slot = heavy_mg_4x
 						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-						engine_type_slot = engine_3_1x
+						engine_type_slot = engine_3_2x
 						special_type_slot_1 = fuel_tanks_small
-						special_type_slot_2 = armor_plate_small
-						special_type_slot_3 = self_sealing_fuel_tanks_small
+						special_type_slot_2 = fuel_tanks_small
+						special_type_slot_3 = fuel_tanks_small
 					}
 				}
 
 				# 近接航空支援機：改良型小型機体（CAS）
 				create_equipment_variant = {
-					name = "Modern CAS"
+					name = "Modern CAS Mk2"
 					type = small_plane_cas_airframe_2
 					parent_version = 0
 					modules = {
 						fixed_main_weapon_slot = small_bomb_bay
 						fixed_auxiliary_weapon_slot_1 = small_bomb_bay
-						fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+						fixed_auxiliary_weapon_slot_2 = small_bomb_bay
 						engine_type_slot = engine_3_2x
-						special_type_slot_1 = armor_plate_small
-						special_type_slot_2 = self_sealing_fuel_tanks_small
+						special_type_slot_1 = fuel_tanks_small
+						special_type_slot_2 = fuel_tanks_small
+						special_type_slot_3 = fuel_tanks_small
 					}
 				}
 			}
 
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe_2
-				variant_name = "Modern Fighter"
+				variant_name = "Modern Fighter Mk2"
 				amount = 100
 				producer = ROOT
 			}
 			add_equipment_to_stockpile = {
 				type = small_plane_cas_airframe_2
-				variant_name = "Modern CAS"
+				variant_name = "Modern CAS Mk2"
 				amount = 100
 				producer = ROOT
 			}
