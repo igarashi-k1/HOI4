@@ -123,14 +123,14 @@ air_tech_bundle_category = {
 		}
 
 		complete_effect = {
-			# 機体設計（装備バリエーション）を初回のみ作成（Mk2：設計変更版。旧設計を作成済みのセーブでも新設計を作成する）
+			# 機体設計（装備バリエーション）を初回のみ作成
 			if = {
-				limit = { NOT = { has_country_flag = air_latest_variants_mk2_created } }
-				set_country_flag = air_latest_variants_mk2_created
+				limit = { NOT = { has_country_flag = air_latest_variants_created } }
+				set_country_flag = air_latest_variants_created
 
 				# 戦闘機：改良型小型機体
 				create_equipment_variant = {
-					name = "Modern Fighter Mk2"
+					name = "Modern Fighter"
 					type = small_plane_airframe_2
 					parent_version = 0
 					modules = {
@@ -145,7 +145,7 @@ air_tech_bundle_category = {
 
 				# 近接航空支援機：改良型小型機体（CAS）
 				create_equipment_variant = {
-					name = "Modern CAS Mk2"
+					name = "Modern CAS"
 					type = small_plane_cas_airframe_2
 					parent_version = 0
 					modules = {
@@ -162,13 +162,13 @@ air_tech_bundle_category = {
 
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe_2
-				variant_name = "Modern Fighter Mk2"
+				variant_name = "Modern Fighter"
 				amount = 100
 				producer = ROOT
 			}
 			add_equipment_to_stockpile = {
 				type = small_plane_cas_airframe_2
-				variant_name = "Modern CAS Mk2"
+				variant_name = "Modern CAS"
 				amount = 100
 				producer = ROOT
 			}
