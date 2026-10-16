@@ -103,4 +103,78 @@ air_tech_bundle_category = {
 			factor = 0
 		}
 	}
+
+	# 航空機の配備：改良型小型機体の戦闘機・近接航空支援機を各100機、装備の備蓄に追加（配備は手動）
+	# 前提条件：「1940年までの航空技術を一括習得」を実行済み（改良型機体3種の習得でも可）
+	air_latest_planes = {
+		icon = generic_air
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			OR = {
+				has_country_flag = air_tech_bundle_completed
+				AND = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+			}
+		}
+
+		complete_effect = {
+			# 機体設計（装備バリエーション）を初回のみ作成
+			if = {
+				limit = { NOT = { has_country_flag = air_latest_variants_created } }
+				set_country_flag = air_latest_variants_created
+
+				# 戦闘機：改良型小型機体
+				create_equipment_variant = {
+					name = "Modern Fighter"
+					type = small_plane_airframe_2
+					parent_version = 0
+					modules = {
+						fixed_main_weapon_slot = heavy_mg_4x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						engine_type_slot = engine_3_1x
+						special_type_slot_1 = fuel_tanks_small
+						special_type_slot_2 = armor_plate_small
+						special_type_slot_3 = self_sealing_fuel_tanks_small
+					}
+				}
+
+				# 近接航空支援機：改良型小型機体（CAS）
+				create_equipment_variant = {
+					name = "Modern CAS"
+					type = small_plane_cas_airframe_2
+					parent_version = 0
+					modules = {
+						fixed_main_weapon_slot = small_bomb_bay
+						fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+						fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+						engine_type_slot = engine_3_2x
+						special_type_slot_1 = armor_plate_small
+						special_type_slot_2 = self_sealing_fuel_tanks_small
+					}
+				}
+			}
+
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_2
+				variant_name = "Modern Fighter"
+				amount = 100
+				producer = ROOT
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_cas_airframe_2
+				variant_name = "Modern CAS"
+				amount = 100
+				producer = ROOT
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
