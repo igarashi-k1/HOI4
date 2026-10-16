@@ -104,7 +104,7 @@ air_tech_bundle_category = {
 		}
 	}
 
-	# 練習機の追加：最低限の装備のみの戦闘機・近接航空支援機を各100機、装備の備蓄に追加
+	# 練習機の配備：最低限の装備のみの戦闘機・近接航空支援機を各200機、装備の備蓄に追加
 	# 機体は戦間期型小型機体、武装・エンジンは最下位のものを1つずつ、その他は空
 	# 前提条件：「1940年までの航空技術を一括習得」を実行済み（改良型機体3種の習得でも可）
 	air_trainer_planes = {
@@ -157,13 +157,13 @@ air_tech_bundle_category = {
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe_0
 				variant_name = "Trainer Fighter"
-				amount = 100
+				amount = 200
 				producer = ROOT
 			}
 			add_equipment_to_stockpile = {
 				type = small_plane_cas_airframe_0
 				variant_name = "Trainer CAS"
-				amount = 100
+				amount = 200
 				producer = ROOT
 			}
 		}
