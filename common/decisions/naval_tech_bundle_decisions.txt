@@ -550,21 +550,14 @@ naval_tech_bundle_category = {
 	}
 
 	# 潜水艦艦隊：改良型潜水艦船体にシュノーケルと魚雷を最大限積んだ潜水艦64隻を練度最大で予備艦隊に追加
-	# 前提条件：「1940年までの海軍技術を一括習得」を実行済み（改良型船体3種の習得でも可）
+	# 前提条件：「1940年までの海軍技術を一括習得」を実行済み
 	naval_submarine_fleet = {
 		icon = generic_naval
 		cost = 0
 		fire_only_once = no
 
 		available = {
-			OR = {
-				has_country_flag = naval_tech_bundle_completed
-				AND = {
-					has_tech = improved_ship_hull_heavy
-					has_tech = improved_ship_hull_cruiser
-					has_tech = improved_ship_hull_light
-				}
-			}
+			has_country_flag = naval_tech_bundle_completed
 		}
 
 		complete_effect = {
