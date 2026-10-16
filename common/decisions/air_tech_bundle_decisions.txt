@@ -11,7 +11,7 @@ air_tech_bundle_category = {
 		}
 
 		complete_effect = {
-			# 「滑走路の整備」の前提条件用フラグ
+			# 「飛行場の整備」の前提条件用フラグ
 			set_country_flag = air_tech_bundle_completed
 			set_technology = {
 				popup = no
@@ -63,7 +63,7 @@ air_tech_bundle_category = {
 		}
 	}
 
-	# 滑走路の整備：領有または占有（支配）しているすべてのステートに航空基地を1レベル即時追加
+	# 飛行場の整備：領有または占有（支配）しているすべてのステートに航空基地を1レベル即時追加
 	# 前提条件：「1940年までの航空技術を一括習得」を実行済み
 	#（フラグ導入前に実行したセーブ向けに、改良型機体3種の習得でも可）
 	air_base_development = {
