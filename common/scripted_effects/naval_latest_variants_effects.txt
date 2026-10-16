@@ -1,0 +1,65 @@
+# 「最新鋭艦隊の就役」「船団護衛艦隊」で使う艦級（装備バリエーション）を初回のみ作成する
+create_naval_latest_variants = {
+	if = {
+		limit = { NOT = { has_country_flag = naval_latest_variants_created } }
+		set_country_flag = naval_latest_variants_created
+
+		# 戦艦：改良型重船体
+		create_equipment_variant = {
+			name = "Modern Battleship"
+			type = ship_hull_heavy_3
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_3
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_secondaries_slot = dp_ship_secondaries_3
+				fixed_ship_armor_slot = ship_armor_bb_3
+				front_1_custom_slot = ship_heavy_battery_3
+				mid_1_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = dp_ship_secondaries_3
+				mid_3_custom_slot = ship_anti_air_3
+				rear_1_custom_slot = ship_heavy_battery_3
+			}
+		}
+
+		# 軽巡洋艦：改良型巡洋艦船体
+		create_equipment_variant = {
+			name = "Modern Light Cruiser"
+			type = ship_hull_cruiser_3
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_3
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = cruiser_ship_engine_3
+				fixed_ship_armor_slot = ship_armor_cruiser_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries_3
+				front_1_custom_slot = ship_light_medium_battery_3
+				mid_1_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = ship_anti_air_3
+				rear_1_custom_slot = ship_light_medium_battery_3
+			}
+		}
+
+		# 駆逐艦：改良型軽船体
+		create_equipment_variant = {
+			name = "Modern Destroyer"
+			type = ship_hull_light_3
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery_3
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_sonar_3
+				fixed_ship_engine_slot = light_ship_engine_3
+				fixed_ship_torpedo_slot = ship_torpedo_3
+				mid_1_custom_slot = ship_torpedo_3
+				rear_1_custom_slot = ship_depth_charge_3
+			}
+		}
+	}
+}

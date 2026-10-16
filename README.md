@@ -20,6 +20,7 @@
 | --- | --- |
 | 1940年までの海軍技術を一括習得 | Man the Guns 海軍ツリーの1940年以前の技術（船体・装甲・対潜・魚雷・機雷・輸送/上陸・ダメコン・射撃管制、海軍軍備の砲術・砲塔・火器管制、電子機械工学、対空砲、初期野戦砲）とレーダー技術（1940年まで）をすべて習得し、海軍経験値 +100 |
 | 最新鋭艦隊の就役 | 改良型船体に最新型艤装を装備した戦艦2隻・軽巡洋艦2隻・駆逐艦6隻を予備艦隊に追加。「1940年までの海軍技術を一括習得」の実行が前提条件（何度でも実行可能） |
+| 船団護衛艦隊 | 最新型艤装の軽巡洋艦2隻・駆逐艦6隻を予備艦隊に追加。練度最大（`start_experience_factor = 1.0`）を試験的に指定。「1940年までの海軍技術を一括習得」の実行が前提条件（何度でも実行可能） |
 
 さらに「補給」カテゴリに以下を追加します。
 
@@ -74,6 +75,7 @@ common/decisions/air_tech_bundle_decisions.txt
 common/decisions/naval_tech_bundle_decisions.txt
 common/decisions/supply_hub_decisions.txt
 common/decisions/resource_development_decisions.txt
+common/scripted_effects/naval_latest_variants_effects.txt
 localisation/english/offmap_factories_l_english.yml   (UTF-8 BOM付き)
 localisation/japanese/offmap_factories_l_japanese.yml  (UTF-8 BOM付き)
 ```
