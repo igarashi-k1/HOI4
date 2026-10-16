@@ -11,6 +11,8 @@ air_tech_bundle_category = {
 		}
 
 		complete_effect = {
+			# 「滑走路の整備」の前提条件用フラグ
+			set_country_flag = air_tech_bundle_completed
 			set_technology = {
 				popup = no
 
@@ -54,6 +56,47 @@ air_tech_bundle_category = {
 				antitank2 = 1
 			}
 			air_experience = 100
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 滑走路の整備：領有または占有（支配）しているすべてのステートに航空基地を1レベル即時追加
+	# 前提条件：「1940年までの航空技術を一括習得」を実行済み
+	#（フラグ導入前に実行したセーブ向けに、改良型機体3種の習得でも可）
+	air_base_development = {
+		icon = generic_air
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			OR = {
+				has_country_flag = air_tech_bundle_completed
+				AND = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+			}
+		}
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					air_base < 10
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 		ai_will_do = {
