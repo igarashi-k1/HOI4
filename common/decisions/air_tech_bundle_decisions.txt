@@ -11,7 +11,7 @@ air_tech_bundle_category = {
 		}
 
 		complete_effect = {
-			# 「飛行場の整備」の前提条件用フラグ
+			# 航空ディシジョン（飛行場の整備・練習機の配備・航空機の配備）の前提条件用フラグ
 			set_country_flag = air_tech_bundle_completed
 			set_technology = {
 				popup = no
@@ -65,21 +65,13 @@ air_tech_bundle_category = {
 
 	# 飛行場の整備：領有または占有（支配）しているすべてのステートに航空基地を1レベル即時追加
 	# 前提条件：「1940年までの航空技術を一括習得」を実行済み
-	#（フラグ導入前に実行したセーブ向けに、改良型機体3種の習得でも可）
 	air_base_development = {
 		icon = generic_air
 		cost = 0
 		fire_only_once = no
 
 		available = {
-			OR = {
-				has_country_flag = air_tech_bundle_completed
-				AND = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-			}
+			has_country_flag = air_tech_bundle_completed
 		}
 
 		complete_effect = {
@@ -106,21 +98,14 @@ air_tech_bundle_category = {
 
 	# 練習機の配備：最低限の装備のみの戦闘機・近接航空支援機を各200機、装備の備蓄に追加
 	# 機体は戦間期型小型機体、武装・エンジンは最下位のものを1つずつ、その他は空
-	# 前提条件：「1940年までの航空技術を一括習得」を実行済み（改良型機体3種の習得でも可）
+	# 前提条件：「1940年までの航空技術を一括習得」を実行済み
 	air_trainer_planes = {
 		icon = generic_air
 		cost = 0
 		fire_only_once = no
 
 		available = {
-			OR = {
-				has_country_flag = air_tech_bundle_completed
-				AND = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-			}
+			has_country_flag = air_tech_bundle_completed
 		}
 
 		complete_effect = {
@@ -174,21 +159,14 @@ air_tech_bundle_category = {
 	}
 
 	# 航空機の配備：改良型小型機体の戦闘機・近接航空支援機を各200機、装備の備蓄に追加（配備は手動）
-	# 前提条件：「1940年までの航空技術を一括習得」を実行済み（改良型機体3種の習得でも可）
+	# 前提条件：「1940年までの航空技術を一括習得」を実行済み
 	air_latest_planes = {
 		icon = generic_air
 		cost = 0
 		fire_only_once = no
 
 		available = {
-			OR = {
-				has_country_flag = air_tech_bundle_completed
-				AND = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-			}
+			has_country_flag = air_tech_bundle_completed
 		}
 
 		complete_effect = {
