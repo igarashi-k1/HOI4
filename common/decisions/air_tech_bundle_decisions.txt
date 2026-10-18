@@ -126,13 +126,13 @@ air_tech_bundle_category = {
 					}
 				}
 
-				# 練習CAS：戦間期型小型CAS機体 + 爆弾架 + エンジンLv1×1
+				# 練習CAS：戦間期型小型CAS機体 + 小型爆弾倉 + エンジンLv1×1
 				create_equipment_variant = {
 					name = "Trainer CAS"
 					type = small_plane_cas_airframe_0
 					parent_version = 0
 					modules = {
-						fixed_main_weapon_slot = bomb_locks
+						fixed_main_weapon_slot = small_bomb_bay
 						engine_type_slot = engine_1_1x
 						special_type_slot_1 = empty
 					}
@@ -183,6 +183,7 @@ air_tech_bundle_category = {
 					modules = {
 						fixed_main_weapon_slot = heavy_mg_4x
 						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
 						engine_type_slot = engine_3_2x
 						special_type_slot_1 = fuel_tanks_small
 						special_type_slot_2 = fuel_tanks_small
