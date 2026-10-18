@@ -47,6 +47,13 @@ supply_hub_category = {
 		}
 
 		complete_effect = {
+			# 機関車（民間列車）を50両、装備の備蓄に追加
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 50
+				producer = ROOT
+			}
+
 			# 同じ組み合わせを二重に敷設しないよう、ステートIDが小さい側からのみ敷設する
 			every_owned_state = {
 				set_temp_variable = { rail_start_state = THIS }
