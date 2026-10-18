@@ -56,6 +56,12 @@ air_tech_bundle_category = {
 				antitank2 = 1
 			}
 			air_experience = 100
+			# 輸送機を100機、装備の備蓄に追加
+			add_equipment_to_stockpile = {
+				type = transport_plane_equipment_1
+				amount = 100
+				producer = ROOT
+			}
 		}
 
 		ai_will_do = {

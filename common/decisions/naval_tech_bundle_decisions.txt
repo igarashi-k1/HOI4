@@ -114,6 +114,12 @@ naval_tech_bundle_category = {
 				centimetric_radar = 1
 			}
 			navy_experience = 100
+			# 輸送船を100隻、装備の備蓄に追加
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 100
+				producer = ROOT
+			}
 		}
 
 		ai_will_do = {
