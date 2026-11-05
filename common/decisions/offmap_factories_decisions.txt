@@ -56,4 +56,65 @@ offmap_factories_category = {
 			factor = 0
 		}
 	}
+
+	# 石油燃料の研究：燃料貯蔵・燃料精製1/2・人工石油実験・石油加工・ゴム加工の技術を習得
+	oil_fuel_research = {
+		icon = generic_industry
+		cost = 0
+		fire_only_once = yes
+
+		available = {
+			always = yes
+		}
+
+		complete_effect = {
+			# 「石油プラントの建設」の前提条件用フラグ
+			set_country_flag = oil_fuel_research_completed
+			set_technology = {
+				popup = no
+				fuel_silos = 1
+				fuel_refining = 1
+				fuel_refining2 = 1
+				synth_oil_experiments = 1
+				oil_processing = 1
+				rubber_processing = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 石油プラントの建設：所有する各ステートの建設枠を4増やし、燃料貯蔵庫2・合成精製所2を即時建設
+	# 前提条件：「石油燃料の研究」を実行済み
+	oil_plant_construction = {
+		icon = generic_industry
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			has_country_flag = oil_fuel_research_completed
+		}
+
+		complete_effect = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
